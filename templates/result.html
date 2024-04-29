@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Approval Result</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 100px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: #666;
+        text-align: center;
+      }
+
+      .probability {
+        font-weight: bold;
+        color: #007bff;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+        color: #fff;
+        background-color: #007bff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      a:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Loan Approval Result</h1>
+      <p>
+        The probability of getting the loan is:
+        <span class="probability">{{ probability }}%</span>
+      </p>
+      <p>
+        <a href="http://127.0.0.1:5500/templates/index.html">Go back to form</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Approval Predictor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Loan Approval Predictor</h1>
+      <form action="http://127.0.0.1:5000/predict" method="POST">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="1">Male</option>
+          <option value="0">Female</option></select
+        ><br /><br />
+
+        <label for="married">Married:</label>
+        <select id="married" name="married" required>
+          <option value="1">Yes</option>
+          <option value="0">No</option></select
+        ><br /><br />
+
+        <label for="dependents">Number of Dependents:</label>
+        <input
+          type="number"
+          id="dependents"
+          name="dependents"
+          required
+        /><br /><br />
+
+        <label for="education">Education:</label>
+        <select id="education" name="education" required>
+          <option value="1">Graduate</option>
+          <option value="0">Not Graduate</option></select
+        ><br /><br />
+
+        <label for="self_employed">Self Employed:</label>
+        <select id="self_employed" name="self_employed" required>
+          <option value="1">Yes</option>
+          <option value="0">No</option></select
+        ><br /><br />
+
+        <label for="applicant_income">Applicant Income:</label>
+        <input
+          type="number"
+          id="applicant_income"
+          name="applicant_income"
+          required
+        /><br /><br />
+
+        <label for="coapplicant_income">Coapplicant Income:</label>
+        <input
+          type="number"
+          id="coapplicant_income"
+          name="coapplicant_income"
+          required
+        /><br /><br />
+
+        <label for="loan_amount">Loan Amount [in thousands]:</label>
+        <input
+          type="number"
+          id="loan_amount"
+          name="loan_amount"
+          required
+        /><br /><br />
+
+        <label for="loan_amount_term">Loan Amount Term:</label>
+        <input
+          type="number"
+          id="loan_amount_term"
+          name="loan_amount_term"
+          required
+        /><br /><br />
+
+        <label for="credit_history">Credit History:</label>
+        <input
+          type="number"
+          id="credit_history"
+          name="credit_history"
+          step="0.01"
+          min="0"
+          max="1"
+          required
+        /><br /><br />
+
+        <label for="property_area">Property Area:</label>
+        <select id="property_area" name="property_area" required>
+          <option value="0">Rural</option>
+          <option value="1">Semiurban</option>
+          <option value="2">Urban</option></select
+        ><br /><br />
+
+        <button type="submit">Predict</button>
+      </form>
+    </div>
+  </body>
+</html>
