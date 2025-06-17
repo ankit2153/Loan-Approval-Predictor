@@ -39,7 +39,7 @@ def predict():
         probability = model.predict_proba(input_data)[0][1]
 
         # Convert probability to percentage
-        probability_percent = round(probability * 100, 2)
+        probability_percent = round(probability * 100, 3)
 
         return render_template('result.html', probability=probability_percent)
 
